@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    margin-top: 110px;
+}
+
+
+.navbar{
+    background-color: rgb(0, 0, 71);
+    height: 80px;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a{
+    color: rgb(66, 2, 98);
+    border: 5px solid rgb(44, 1, 63);
+    border-radius: 10px;
+} 
+.corpo{
+    display: flex;
+    margin: 30px;
+    justify-content:right;
+}
+
+.lateral{
+    background-color: rgb(22, 29, 109);
+    width: 150px;
+    position: fixed;
+    left: 30px;
+    height: calc(100% - 140px);
+}
+
+.main{
+    background-color: rgb(2, 55, 108);
+    width: calc(100% - 180px);
+
+}
+.navbar label{
+    display: none;
+}
+
+@media(max-width:600px){
+
+    .lateral{
+        display: none;
+    }
+
+    .main{
+        width:100% ;
+    }
+    .navbar a{
+        display: none;
+    }
+    .navbar label{
+        display: flex;
+        color: rgb(21, 0, 78);
+        border: 7px solid rgb(1, 84, 67) ;
+    }
+}

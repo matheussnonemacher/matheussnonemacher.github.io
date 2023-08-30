@@ -1,0 +1,28 @@
+.navbar{
+    background-color:  darkcyan;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.itens{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.itens a{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    border: 4px solid black;
+}
+.itens a:hover{
+    color: white;
+    background-color: chartreuse;
+    text-decoration-style: wavy;
+    border: 4px solid white;
+}
+.navbar:hover{
+    background-color: darkorchid;
+}

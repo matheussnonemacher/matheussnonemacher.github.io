@@ -1,0 +1,30 @@
+.navbar{
+    background-color: black;
+    color: gold;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0;
+}
+.navbar img{
+height: 40px;
+}
+.navbar input{
+    width: 80px;
+    border-radius: 20px;
+}
+.navbar div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navbar div a{
+    background-color: cyan;
+    padding: 6px;
+    color: black;
+}

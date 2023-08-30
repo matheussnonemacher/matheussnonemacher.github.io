@@ -1,0 +1,28 @@
+.cards{
+    background-color: gray;
+    display:  flex;
+    gap: 15px;
+}
+
+
+.card{
+    background-color: firebrick;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.card img{
+    width: 150px;
+    border-radius: 18px 18px 0 0;
+}
+
+.card label{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    color: white;
+}
