@@ -50,6 +50,10 @@ header{
     margin-right: 15px;
 }
 
+.menu a:hover{
+    text-decoration: underline;
+}
+
 section.sobre{
     position: relative;
     height: calc(100% - 200px);
@@ -72,8 +76,32 @@ section.sobre{
 
 .texto-sobre{
     margin-top: 100px;
+    margin-left: -500px;
 }
 
 .texto-sobre h1{
     font-size: 50px;
+}
+
+.texto-sobre p{
+    margin: 20px 0;
+    color: black;
+    font-size: 14px ;
+    font-weight: bold;
+    
+}
+
+.texto-sobre a{
+    border: 0;
+    background-color:dimgray ;
+    color: white;
+    border-radius: 10px;
+    width: 10 0px;
+    height: 30px;
+    cursor:pointer ;
+    padding: 5px;
+}
+
+.texto-sobre a:hover{
+    text-decoration: underline;
 }
