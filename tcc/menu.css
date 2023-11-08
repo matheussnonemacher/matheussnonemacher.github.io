@@ -54,3 +54,39 @@ header{
     text-decoration: underline;
 }
 
+
+.cards{
+    display: flex;
+    padding: 80px 100px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards a{
+    border: 5px solid rgb(49, 56, 59);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(49, 56, 59);
+    overflow: hidden;
+}
+
+.cards a:hover{
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.cards a img{
+    height: 150px;
+    width: 150px;
+}
+
+.cards a label{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
