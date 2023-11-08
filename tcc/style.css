@@ -69,9 +69,12 @@ section.sobre{
     background-color: dimgrey;
 }
 
-
 .logo2{
     padding: 40px;
+}
+
+.logo2 img{
+    width: 100%;
 }
 
 .texto-sobre{
@@ -104,4 +107,13 @@ section.sobre{
 
 .texto-sobre a:hover{
     text-decoration: underline;
+}
+
+@media(max-width: 2300px){
+    .extras{ 
+        width: 800px;
+        height: 800px;
+        bottom: -250px;
+        right: -250px;
+    }
 }
