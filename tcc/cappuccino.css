@@ -1,0 +1,14 @@
+.caixa{ 
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: center;
+}
+
+.caixa img{
+    height: 300px;
+    width: 300px;
+    margin-left: -200px;
+}
