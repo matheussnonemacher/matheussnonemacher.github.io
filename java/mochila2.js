@@ -1,15 +1,15 @@
-
-mochila = []
+lista = []
 
 function verItens(){
-    document.getElementById('capacidade').innerHTML = '('+mochila.length+'/4 itens)'
+    document.getElementById('capacidade').innerHTML = '('+lista.length+'/4 itens)'
     document.getElementById('item').value = ''
     html = ''
-    for(i=0; i<mochila.length; i++){
+    for(i=0; i<lista.length; i++){
         html += `<div>
-                    <div id="item`+i+`">`+mochila[i]+`</div>
-                    <button onclick="editarItem(`+i+`)">E</button>
-                    <button onclick="removerItem(`+i+`)">X</button>
+                    <div id="item`+i+`">`+lista[i]+`</div>
+                    <button onclick="editarItem(`+i+`)">✐</button> 
+                    <button onclick="removerItem(`+i+`)">❌</button>
+                    
                 </div>`
     }
     document.getElementById('itens').innerHTML = html
@@ -19,33 +19,37 @@ function adicionarItem(){
     item = document.getElementById('item').value
     
     if(validarItem()){
-        if(mochila.length < 4){
-            mochila.push(item)
+        if(lista.length < 4){
+            lista.push(item)
             verItens()
         }else{
-            alert('A mochila está cheia.')
+            alert('A lista está cheia.')
         }
     }
     
 }
 
-function removerItem(i){
-    mochila.splice(i,1)
-    verItens()
-}
-
 function editarItem(i){
-    if(document.getElementById('item'+i).innerHTML == mochila[i]){
-        document.getElementById('item'+i).innerHTML = '<input id="editado" type="text" value="'+mochila[i]+'">'
+    if(document.getElementById('item'+i).innerHTML == lista[i]){
+        document.getElementById('item'+i).innerHTML = '<input id="editado" type="text" value="'+lista[i]+'">'
     }else{
         item = document.getElementById('editado').value
         if(validarItem()){
-            mochila[i] = item
+            lista[i] = item
             verItens()
         }
         
     } 
 }
+
+
+function removerItem(i){
+    lista.splice(i,1)
+    verItens()
+}
+
+
+
 
 function validarItem(){
     item = item[0].toUpperCase() + item.slice(1).toLowerCase()
@@ -53,7 +57,7 @@ function validarItem(){
     if(item == ''){
         alert('Campo vazio')
         return false
-    }else if(mochila.indexOf(item) != -1){
+    }else if(lista.indexOf(item) != -1){
         alert('Este item já está na lista.')
         return false
     }else{

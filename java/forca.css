@@ -11,26 +11,5 @@ body{
     align-content: center;
     flex-direction: column;
     font-family: Comic Sans MS;
-}
-
-
-body>div{
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-
-#itens{
-    border: 2px solid gray;
-}
-
-#itens>div{
-  border: 2px solid black ;  
-}
-
-#add{
-    border: 2px solid  rgb(23, 18, 51);
-}
-#item{ 
-    border: 2px solid  rgb(23, 18, 51);
+    background-image: linear-gradient(to right , rgb(0, 135, 177), rgb(0, 50, 187), rgb(106, 0, 148),  rgb(160, 0, 48) );
 }
